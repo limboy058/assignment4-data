@@ -1,0 +1,7 @@
+paths:
+  train_bin: /data/c-nband/a1-basics/owt_train_gpt2_tok.bin
+  valid_bin: /data/paloma/tokenized_paloma_c4_100_domains_validation.bin
+  model_output: output/your_data
+training:
+  wandb_entity: ???
+  wandb_project: cs336-data

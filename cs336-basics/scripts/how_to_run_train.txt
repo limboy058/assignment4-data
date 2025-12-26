@@ -1,0 +1,14 @@
+如何运行train?:
+
+
+开一个tmux
+cd /home/tyhcyq/cyq/assignment4-data/cs336-basics
+CUDA_VISIBLE_DEVICES=2 /home/tyhcyq/cyq/assignment4-data/.venv/bin/python scripts/train.py
+
+
+一些config的关键参数:
+    train_bin: Path = Path('/mnt/mnt/zjdx/tyhcyq/valid_corpus_2/corpus.bin')
+    valid_bin: Path = Path('/mnt/mnt/zjdx/tyhcyq/paloma_c4_100_domain.bin')
+    model_output: Path = Path('/mnt/mnt/zjdx/tyhcyq/ckpt/run_1Bdata')   保存了ckpt.和wandb日志. 且wandb run 名称为文件夹最后一位(这里即为run_1Bdata)
+
+    
